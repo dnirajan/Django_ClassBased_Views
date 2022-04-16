@@ -1,0 +1,17 @@
+
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Page</title>
+</head>
+<body>
+
+<h1>Are you sure???</h1>
+<form action="" method="POST" class="bootstrap4">
+    {% csrf_token%}
+    <input type="submit" value="Delete">
+    <a href="{% url 'create' %}">Return Back</a>
+</form>
+</body>
+</html>

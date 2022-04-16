@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>employee</title>
+</head>
+<body>
+    <h2>Your data</h2>
+    {% for employee in employees %}
+        {{ employee.name }}
+        {{ employee.eno }}
+        {{ employee.course }} <br>
+    {% endfor %}
+</body>
+</html>

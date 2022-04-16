@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Detail</title>
+</head>
+<body>
+<h2>Student Detail Page</h2>
+{#    {{ student.name }}#}
+{#    {{ student.roll }}#}
+{#    {{ student.course }}#}
+{{ stu.name }}
+{{ stu.roll }}
+{{ stu.course }}
+<hr>
+{% for lis in all_student %}
+    <li><a href="{% url 'studentdetail' lis.id %}">{{ lis.name }}</a></li>
+{% endfor %}
+</body>
+</html>

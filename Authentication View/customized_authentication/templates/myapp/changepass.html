@@ -1,0 +1,17 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+    <h1>User </h1>
+    <p>Change password From here</p>
+    <form method="post" class="bootstrap4">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type='submit' value='Submit'>
+        <a href='{% url 'dashboard'%}'>Cancel</a>
+    </form>
+</body>
+</html>

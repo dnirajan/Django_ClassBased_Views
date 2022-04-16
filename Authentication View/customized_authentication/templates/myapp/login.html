@@ -1,0 +1,18 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    <h1>User Login</h1>
+    <p>Login From here</p>
+    <form method="post" class="bootstrap4">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type='submit' value='Submit'>
+        {% comment %} <a href="{%url 'password_reset'%}">Reset Password</a> {% endcomment %}
+    </form>
+</body>
+</html>

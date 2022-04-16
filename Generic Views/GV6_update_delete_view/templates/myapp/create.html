@@ -1,0 +1,17 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Page</title>
+</head>
+<body>
+
+<h1>Creating Form</h1>
+<form action="" method="POST" class="bootstrap4">
+    {% csrf_token%}
+    <!-- {{form.as_p}} -->
+    {{ form|crispy }}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

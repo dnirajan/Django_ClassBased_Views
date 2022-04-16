@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+</head>
+<body>
+    <h2>Your data</h2>
+    <div>
+        {% for student in student_list %}
+        Roll No:{{ student.roll }}
+        Name: {{ student.name }}
+        Course: {{ student.course }}<br>
+    {% endfor %}
+    Hello this is breakkk
+    <div>
+        {% for student in sequence %}
+        Roll No:{{ student.roll }}
+        Name: {{ student.name }}
+        Course: {{ student.course }}<br>
+    {% endfor %}
+    </div>
+    </div>
+
+</body>
+</html>
